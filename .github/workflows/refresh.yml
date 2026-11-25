@@ -1,16 +1,11 @@
 name: Refresh verified SRS
 on:
-  push:
-    branches: [main]
-    paths: ['.github/workflows/refresh.yml', 'scripts/refresh.py', 'sources.json']
   workflow_dispatch:
     inputs:
       seed:
         description: Validate the original seed instead of fetching updates
         type: boolean
         default: false
-  schedule:
-    - cron: '17 3 * * *'
 permissions:
   contents: write
 concurrency:
