@@ -1,0 +1,145 @@
+[
+  {
+    "tag": "whitelist-domains",
+    "repository": "hydraponique/roscomvpn-geosite",
+    "ref": "master",
+    "path": "release/sing-box/whitelist.srs",
+    "kind": "domain",
+    "license": "MIT",
+    "git_blob": "1fbb1930000bf4942062d39db8b689d2ca7b62be",
+    "bytes": 3210,
+    "seed_commit": "300324058785ffab06df8725e18969f835d73618"
+  },
+  {
+    "tag": "ru-domains",
+    "repository": "hydraponique/roscomvpn-geosite",
+    "ref": "master",
+    "path": "release/sing-box/category-ru.srs",
+    "kind": "domain",
+    "license": "MIT",
+    "git_blob": "da50fec3ef35fe8f99bf9be837b1405a259d9723",
+    "bytes": 594,
+    "seed_commit": "300324058785ffab06df8725e18969f835d73618"
+  },
+  {
+    "tag": "apple-domains",
+    "repository": "MetaCubeX/meta-rules-dat",
+    "ref": "sing",
+    "path": "geo/geosite/apple.srs",
+    "kind": "domain",
+    "license": "GPL-3.0",
+    "git_blob": "6d696678018af442023c861acade0a2bbdba06de",
+    "bytes": 14694,
+    "seed_commit": "324ef6b93ec1c768b9f70d6cc459ee8bd4a1fb56"
+  },
+  {
+    "tag": "telegram-domains",
+    "repository": "MetaCubeX/meta-rules-dat",
+    "ref": "sing",
+    "path": "geo/geosite/telegram.srs",
+    "kind": "domain",
+    "license": "GPL-3.0",
+    "git_blob": "cdf5f90435731994c18008bc99dd3749b92ce80c",
+    "bytes": 248,
+    "seed_commit": "324ef6b93ec1c768b9f70d6cc459ee8bd4a1fb56"
+  },
+  {
+    "tag": "openai-domains",
+    "repository": "MetaCubeX/meta-rules-dat",
+    "ref": "sing",
+    "path": "geo/geosite/openai.srs",
+    "kind": "domain",
+    "license": "GPL-3.0",
+    "git_blob": "349b665c5952f57affa207205fb453704f5cbb0d",
+    "bytes": 466,
+    "seed_commit": "324ef6b93ec1c768b9f70d6cc459ee8bd4a1fb56"
+  },
+  {
+    "tag": "google-domains",
+    "repository": "MetaCubeX/meta-rules-dat",
+    "ref": "sing",
+    "path": "geo/geosite/google.srs",
+    "kind": "domain",
+    "license": "GPL-3.0",
+    "git_blob": "04a604d4bb7632a5ffe6a7df2b121834e7228733",
+    "bytes": 8021,
+    "seed_commit": "324ef6b93ec1c768b9f70d6cc459ee8bd4a1fb56"
+  },
+  {
+    "tag": "youtube-domains",
+    "repository": "MetaCubeX/meta-rules-dat",
+    "ref": "sing",
+    "path": "geo/geosite/youtube.srs",
+    "kind": "domain",
+    "license": "GPL-3.0",
+    "git_blob": "8ef9e2f5eff59b077a2e70a10d3e68a8a15a541c",
+    "bytes": 1144,
+    "seed_commit": "324ef6b93ec1c768b9f70d6cc459ee8bd4a1fb56"
+  },
+  {
+    "tag": "blocked-ru-domains",
+    "repository": "runetfreedom/russia-v2ray-rules-dat",
+    "ref": "release",
+    "path": "sing-box/rule-set-geosite/geosite-ru-blocked.srs",
+    "kind": "domain",
+    "license": "GPL-3.0",
+    "git_blob": "0b37f7fdd856819098a2ca447841057ae3f47b8f",
+    "bytes": 520713,
+    "seed_commit": "61ee601a08f074d806a24605210d66f7f3316e6a"
+  },
+  {
+    "tag": "telegram-ip",
+    "repository": "MetaCubeX/meta-rules-dat",
+    "ref": "sing",
+    "path": "geo/geoip/telegram.srs",
+    "kind": "ip",
+    "license": "GPL-3.0",
+    "git_blob": "4d4458ea113ab7d4d2bdba94340bcdb42f5f3e6b",
+    "bytes": 127,
+    "seed_commit": "324ef6b93ec1c768b9f70d6cc459ee8bd4a1fb56"
+  },
+  {
+    "tag": "openai-ip",
+    "repository": "Chocolate4U/Iran-sing-box-rules",
+    "ref": "rule-set",
+    "path": "geoip-openai.srs",
+    "kind": "ip",
+    "license": "GPL-3.0",
+    "git_blob": "fd993ade5fefafb7470884a3d3abac42c2b61a93",
+    "bytes": 1452,
+    "seed_commit": "96ca06b7ebab0c8174a1db58d2e57610ee0b4024"
+  },
+  {
+    "tag": "google-ip",
+    "repository": "MetaCubeX/meta-rules-dat",
+    "ref": "sing",
+    "path": "geo/geoip/google.srs",
+    "kind": "ip",
+    "license": "GPL-3.0",
+    "git_blob": "3b01c91ca7bce1d0de455b207550d2bf3fec0f9a",
+    "bytes": 7752,
+    "seed_commit": "324ef6b93ec1c768b9f70d6cc459ee8bd4a1fb56"
+  },
+  {
+    "tag": "blocked-ru-ip",
+    "repository": "runetfreedom/russia-v2ray-rules-dat",
+    "ref": "release",
+    "path": "sing-box/rule-set-geoip/geoip-ru-blocked.srs",
+    "kind": "ip",
+    "license": "GPL-3.0",
+    "git_blob": "20ce727667b9fff7d251de76710b2c4fa8a42d78",
+    "bytes": 200987,
+    "seed_commit": "61ee601a08f074d806a24605210d66f7f3316e6a"
+  },
+  {
+    "tag": "blocked-community-ip",
+    "repository": "runetfreedom/russia-v2ray-rules-dat",
+    "ref": "release",
+    "path": "sing-box/rule-set-geoip/geoip-ru-blocked-community.srs",
+    "kind": "ip",
+    "license": "GPL-3.0",
+    "git_blob": "080706b43c9a81f830540a5bd9a5e5c09140a287",
+    "bytes": 3878,
+    "seed_commit": "61ee601a08f074d806a24605210d66f7f3316e6a"
+  }
+]

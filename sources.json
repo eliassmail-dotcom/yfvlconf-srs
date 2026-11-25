@@ -1,0 +1,106 @@
+[
+  {
+    "tag": "whitelist-domains",
+    "repository": "hydraponique/roscomvpn-geosite",
+    "ref": "master",
+    "path": "release/sing-box/whitelist.srs",
+    "kind": "domain",
+    "license": "MIT"
+  },
+  {
+    "tag": "ru-domains",
+    "repository": "hydraponique/roscomvpn-geosite",
+    "ref": "master",
+    "path": "release/sing-box/category-ru.srs",
+    "kind": "domain",
+    "license": "MIT"
+  },
+  {
+    "tag": "apple-domains",
+    "repository": "MetaCubeX/meta-rules-dat",
+    "ref": "sing",
+    "path": "geo/geosite/apple.srs",
+    "kind": "domain",
+    "license": "GPL-3.0"
+  },
+  {
+    "tag": "telegram-domains",
+    "repository": "MetaCubeX/meta-rules-dat",
+    "ref": "sing",
+    "path": "geo/geosite/telegram.srs",
+    "kind": "domain",
+    "license": "GPL-3.0"
+  },
+  {
+    "tag": "openai-domains",
+    "repository": "MetaCubeX/meta-rules-dat",
+    "ref": "sing",
+    "path": "geo/geosite/openai.srs",
+    "kind": "domain",
+    "license": "GPL-3.0"
+  },
+  {
+    "tag": "google-domains",
+    "repository": "MetaCubeX/meta-rules-dat",
+    "ref": "sing",
+    "path": "geo/geosite/google.srs",
+    "kind": "domain",
+    "license": "GPL-3.0"
+  },
+  {
+    "tag": "youtube-domains",
+    "repository": "MetaCubeX/meta-rules-dat",
+    "ref": "sing",
+    "path": "geo/geosite/youtube.srs",
+    "kind": "domain",
+    "license": "GPL-3.0"
+  },
+  {
+    "tag": "blocked-ru-domains",
+    "repository": "runetfreedom/russia-v2ray-rules-dat",
+    "ref": "release",
+    "path": "sing-box/rule-set-geosite/geosite-ru-blocked.srs",
+    "kind": "domain",
+    "license": "GPL-3.0"
+  },
+  {
+    "tag": "telegram-ip",
+    "repository": "MetaCubeX/meta-rules-dat",
+    "ref": "sing",
+    "path": "geo/geoip/telegram.srs",
+    "kind": "ip",
+    "license": "GPL-3.0"
+  },
+  {
+    "tag": "openai-ip",
+    "repository": "Chocolate4U/Iran-sing-box-rules",
+    "ref": "rule-set",
+    "path": "geoip-openai.srs",
+    "kind": "ip",
+    "license": "GPL-3.0"
+  },
+  {
+    "tag": "google-ip",
+    "repository": "MetaCubeX/meta-rules-dat",
+    "ref": "sing",
+    "path": "geo/geoip/google.srs",
+    "kind": "ip",
+    "license": "GPL-3.0"
+  },
+  {
+    "tag": "blocked-ru-ip",
+    "repository": "runetfreedom/russia-v2ray-rules-dat",
+    "ref": "release",
+    "path": "sing-box/rule-set-geoip/geoip-ru-blocked.srs",
+    "kind": "ip",
+    "license": "GPL-3.0"
+  },
+  {
+    "tag": "blocked-community-ip",
+    "repository": "runetfreedom/russia-v2ray-rules-dat",
+    "ref": "release",
+    "path": "sing-box/rule-set-geoip/geoip-ru-blocked-community.srs",
+    "kind": "ip",
+    "license": "GPL-3.0"
+  }
+]

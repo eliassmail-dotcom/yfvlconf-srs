@@ -1,0 +1,59 @@
+name: Refresh verified SRS
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/refresh.yml', 'scripts/refresh.py', 'sources.json']
+  workflow_dispatch:
+    inputs:
+      seed:
+        description: Validate the original seed instead of fetching updates
+        type: boolean
+        default: false
+  schedule:
+    - cron: '17 3 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: srs-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: eliassmail-dotcom/sing-box
+          ref: fff7656e1235085dbbc3c6d2224f03bdf75c1f8f
+          path: .ci/sing-box-lx
+          submodules: recursive
+          persist-credentials: false
+      - uses: actions/setup-go@v6
+        with:
+          go-version-file: .ci/sing-box-lx/go.mod
+          cache: true
+          cache-dependency-path: .ci/sing-box-lx/go.sum
+      - name: Build pinned validator
+        shell: bash
+        run: |
+          set -euo pipefail
+          LX_TAGS="$(make -s -C .ci/sing-box-lx -f Makefile.lx lx-print-tags | tr ',' '\n' | grep -vx 'with_lx_chain' | paste -sd, -)"
+          make -C .ci/sing-box-lx -f Makefile.lx lx-build LX_BUILD=33 LX_TAGS="$LX_TAGS"
+      - name: Validate and refresh complete mirror
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          VALIDATE_SEED: ${{ inputs.seed }}
+        shell: bash
+        run: |
+          args=()
+          if [[ "$VALIDATE_SEED" == true || ! -f manifest.json ]]; then args+=(--seed); fi
+          python3 scripts/refresh.py --core .ci/sing-box-lx/sing-box "${args[@]}"
+      - name: Publish last known good generation
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- srs manifest.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "chore: refresh verified SRS"
+          git push
